@@ -14,3 +14,6 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym 'RESTful'
 # end
+ActiveSupport::Inflector.inflections(:en) do |inflect| #default waarde van pluralize is :en en er is geen parameter mee te geven om dit te veranderen
+  inflect.irregular 'fout', 'fouten'
+end

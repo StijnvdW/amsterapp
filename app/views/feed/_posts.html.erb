@@ -1,0 +1,19 @@
+<% if item.any? %>
+    <% item.each do |i| %>
+        <div class="row">
+          <div class="col-md-12"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+            <%=I18n.localize(i.created_at, :format => '%I:%M')%></span>
+            <%= link_to i.title, i.link %>
+            <font size="1" color="grey">(<%= i.basis_url %>)
+            </font>
+          </div>
+        </div>
+    <% end %>
+
+<% else %>
+    <div class="row">
+      <div class="col-md-12">
+        Geen berichten.
+      </div>
+    </div>
+<% end %>

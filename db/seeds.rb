@@ -9,7 +9,6 @@
 
 daysAgo = Array(0..5)
 
-
 #each day
 daysAgo.each do |d|
 	#create number of articles

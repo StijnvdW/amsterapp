@@ -10,11 +10,27 @@ gem 'bigdecimal'
 #LAYOUT Boostrap
 #http://www.gotealeaf.com/blog/integrating-rails-and-bootstrap-part-1/
 #https://github.com/twbs/bootstrap-sass
-gem 'bootstrap-sass', '~> 3.3.3'
+gem 'bootstrap-sass', '~> 3.3.4'
 gem 'autoprefixer-rails'
 
-#FAKE DATA
+#FAKE DATA: added by me
 gem 'faker'
+
+#Simple Form: added by me
+gem 'simple_form', '~> 3.1.0.rc1', github: 'plataformatec/simple_form', branch: 'master'
+
+#talen: https://github.com/svenfuchs/rails-i18n
+gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
+
+#rspec
+#gem 'rspec', '~> 3.0'
+#gem 'minitest', '~> 5.6.1'
+
+group :test do
+  gem "minitest"
+  gem 'minitest-reporters', '>= 0.5.0'
+  gem 'cucumber-rails', :require => false
+end
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

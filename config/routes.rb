@@ -1,5 +1,5 @@
 Amsterapp::Application.routes.draw do
-  get "feed/show"
+  get 'feed/show'
   root 'feed#show'
   resources :articles
 
