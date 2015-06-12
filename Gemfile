@@ -22,6 +22,10 @@ gem 'simple_form', '~> 3.1.0.rc1', github: 'plataformatec/simple_form', branch: 
 #talen: https://github.com/svenfuchs/rails-i18n
 gem 'rails-i18n', '~> 4.0.0' # For 4.0.x
 
+#https://github.com/plataformatec/devise
+gem 'devise'
+
+
 #rspec
 #gem 'rspec', '~> 3.0'
 #gem 'minitest', '~> 5.6.1'

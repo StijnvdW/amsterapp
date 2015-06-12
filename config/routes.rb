@@ -1,4 +1,5 @@
 Amsterapp::Application.routes.draw do
+  devise_for :users
   get 'feed/show'
   root 'feed#show'
   resources :articles
